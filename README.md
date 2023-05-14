@@ -4,6 +4,10 @@ A demo exploring realistic data from mobile phone users across India, using Redi
 
 ## Demo Features
 
+__Data has been sourced from [Opencellid](https://opencellid.org/)__
+__The world's largest Open Database of Cell Towers__
+__Locate devices without GPS, explore Mobile Operator coverage and more!__
+
 - ~2.5 million JSON documents (approx 1 KB / doc)
 - RedisJSON Features
     - JSON SET and GET documents, with nesting and GEO data

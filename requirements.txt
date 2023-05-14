@@ -1,0 +1,17 @@
+async-timeout==4.0.2
+commonmark==0.9.1
+dataclasses==0.8
+importlib-metadata==4.8.3
+numpy==1.19.5
+packaging==21.3
+pandas==1.1.5
+pkg-resources==0.0.0
+Pygments==2.14.0
+pyparsing==3.0.9
+python-dateutil==2.8.2
+pytz==2023.3
+redis==4.3.6
+rich==12.6.0
+six==1.16.0
+typing-extensions==4.1.1
+zipp==3.6.0

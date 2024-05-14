@@ -128,9 +128,10 @@ FT.SEARCH idx:wireless @circle:"Kerala"
 Total number of users in Kerala
 
 ```sql
-FT.AGGREGATE idx:wireless @circle:"Kerala"
+FT.AGGREGATE idx:wireless @circle:Kerala
 	GROUPBY 1 @radio
-	REDUCE COUNT_DISTINCT 1 @id as count
+	REDUCE COUNT 0 as count
+    DIALECT 3
 ```
 Website to get unix timestamps : https://www.epochconverter.com/
 
@@ -149,6 +150,7 @@ FT.AGGREGATE idx:wireless @created:[1420050600,1451586600]
 	GROUPBY 1 @operator 
 		REDUCE COUNT 0 AS cnt 
 	SORTBY 2 @cnt DESC
+    DIALECT 3
 ```
 
 **Anomaly Detection**
@@ -164,6 +166,7 @@ FT.AGGREGATE idx:wireless "@loc:[76.267303 9.931233 15 km]"
 	GROUPBY 1 @circle
 	REDUCE COUNT 0 as CNT
 	SORTBY 2 @CNT DESC
+    DIALECT 3
 ```
 
 @loc:[72.877426 19.076090 5 km] -- Mumbai
@@ -172,6 +175,7 @@ FT.AGGREGATE idx:wireless "@loc:[72.877426 19.076090 15 km]"
 	GROUPBY 1 @circle
 	REDUCE COUNT 0 as CNT
 	SORTBY 2 @CNT DESC
+    DIALECT 3
 ```
 
 Notice anything weird about the results? A fast way to detect anomalies in your data at real time or over huge volume of data (~2.5 mil records)
